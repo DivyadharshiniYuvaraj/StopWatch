@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class = "navbar">
+        <div class="navbarItem">Alarm</div>
+        <div class="navbarItem">Clock</div>
+        <div class="navbarItem active">Stopwatch</div>
+        <div class="navbarItem">Timer</div>
+    </header>
+    
+    <section class="roundSection">  
+        <div class="dialRound">
+            <div class="timeDisplay">
+                <span id="minutes">00</span> :
+                <span id="seconds">00</span> :
+                <span id="milliseconds" class="showTime">00</span>
+            </div>
+        </div>
+    </section>
+
+    <section class = "lapContainer" id="lapList"></section>
+
+    <section class="buttonsSection">
+        <button id="leftBtn" class="btn sec">Lap</button>
+        <button id="rightBtn" class="btn primary">Start</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
